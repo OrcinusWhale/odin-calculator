@@ -1,0 +1,24 @@
+button {
+  display: inline-block;
+  padding: 0;
+  width: 20%;
+}
+
+.blank-button {
+  display: inline-block;
+  width: 20%;
+}
+
+#display {
+  border: 1px solid black;
+}
+
+#calculator {
+  width: 116px;
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.button-row {
+  margin-bottom: 4px;
+}

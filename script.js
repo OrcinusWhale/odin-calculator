@@ -43,7 +43,8 @@ function operate() {
     }
     b = 0;
     stage = 2;
-    display.innerText = String(a);
+    if (a == 69) display.innerText = String(a) + " - matty sexy yes ;)";
+    else display.innerText = String(a);
   }
 }
 

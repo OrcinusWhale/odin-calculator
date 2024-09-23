@@ -82,7 +82,7 @@ function clearCalc() {
 }
 
 function dot() {
-  if (!dotted) {
+  if (!dotted && !afterCalc) {
     dotted = true;
     display.innerText = display.innerText + ".";
   }

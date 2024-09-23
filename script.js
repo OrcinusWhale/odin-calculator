@@ -53,6 +53,7 @@ function operate() {
 function number(event) {
   if (afterCalc) clearCalc();
   if (stage == 2) {
+    dotted = false;
     display.innerText = "";
     stage = 3;
   }
@@ -83,6 +84,7 @@ function clearCalc() {
 function dot() {
   if (!dotted) {
     dotted = true;
+    display.innerText = display.innerText + ".";
   }
 }
 

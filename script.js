@@ -74,8 +74,15 @@ function clearCalc() {
   display.innerText = "0";
 }
 
+function dot() {
+  if (!dotted) {
+    dotted = true;
+  }
+}
+
 let a = 0;
 let op = null;
 let b = 0;
 let stage = 1;
+let dotted = false;
 let display = document.querySelector("#display");

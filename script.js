@@ -47,6 +47,7 @@ function operate() {
     stage = 2;
     if (a == 69) display.innerText = String(a) + " - matty sexy yes ;)";
     else display.innerText = String(a);
+    display.scrollLeft = 0;
   }
 }
 
@@ -60,6 +61,7 @@ function number(event) {
   if (display.innerText != "0")
     display.innerText = display.innerText.concat(event.target.innerText);
   else display.innerText = event.target.innerText;
+  display.scrollLeft = display.scrollWidth;
 }
 
 function operation(event) {
@@ -85,6 +87,7 @@ function dot() {
   if (!dotted && !afterCalc) {
     dotted = true;
     display.innerText = display.innerText + ".";
+    display.scrollLeft = display.scrollWidth;
   }
 }
 
